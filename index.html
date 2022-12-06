@@ -22,11 +22,20 @@
       <div class="container">
         <a href="#" lang="en" class="logo logo-top"><span class="logo-blue">Web</span>Studio</a>
         <nav class="nav-top">
+
+
+          
           <ul class="site-nav list">
+
             <li class="list-top"><a href="./index.html" class="site-nav-link link current">Студія</a></li>
-            <li class="list-top"><a href="./portfolio.html" class="site-nav-link link">Портфоліо</a></li>
-            <li class="list-top"><a href="#" class="site-nav-link link">Контакти</a></li>
+            <li class="list-top"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li class="list-top"><a href="#" class=" link">Контакти</a></li>
+         
           </ul>
+
+
+
+
         </nav>
         <div class="adress-list">
           <ul class="site-nav list">
@@ -54,7 +63,7 @@
       <section class="hero section">
         <dav class="container hero-box">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-action">Замовити послугу</button>
+          <button type="button" class="hero-action" data-modal-open>Замовити послугу</button>
         </dav>
       </section>
       <section class="benefits section">
@@ -402,5 +411,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg width="20" height="20" class="modal-close-x">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  <script src="./js/modal.js"></script>
   </body>
 </html>
